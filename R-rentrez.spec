@@ -4,7 +4,7 @@
 #
 Name     : R-rentrez
 Version  : 1.2.1
-Release  : 8
+Release  : 9
 URL      : https://cran.r-project.org/src/contrib/rentrez_1.2.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/rentrez_1.2.1.tar.gz
 Summary  : 'Entrez' in R
