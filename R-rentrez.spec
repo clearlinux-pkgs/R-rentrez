@@ -4,15 +4,12 @@
 #
 Name     : R-rentrez
 Version  : 1.2.1
-Release  : 7
+Release  : 8
 URL      : https://cran.r-project.org/src/contrib/rentrez_1.2.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/rentrez_1.2.1.tar.gz
 Summary  : 'Entrez' in R
 Group    : Development/Tools
 License  : MIT
-Requires: R-XML
-Requires: R-httr
-Requires: R-jsonlite
 BuildRequires : R-XML
 BuildRequires : R-httr
 BuildRequires : R-jsonlite
@@ -29,10 +26,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552844106
+export SOURCE_DATE_EPOCH=1552868316
 
 %install
-export SOURCE_DATE_EPOCH=1552844106
+export SOURCE_DATE_EPOCH=1552868316
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
