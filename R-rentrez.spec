@@ -4,7 +4,7 @@
 #
 Name     : R-rentrez
 Version  : 1.2.2
-Release  : 18
+Release  : 19
 URL      : https://cran.r-project.org/src/contrib/rentrez_1.2.2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/rentrez_1.2.2.tar.gz
 Summary  : 'Entrez' in R
@@ -17,28 +17,28 @@ BuildRequires : R-XML
 BuildRequires : R-httr
 BuildRequires : R-jsonlite
 BuildRequires : buildreq-R
-BuildRequires : util-linux
 
 %description
 allowing users to search databases like 'GenBank'
 
 %prep
 %setup -q -c -n rentrez
+cd %{_builddir}/rentrez
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1571888373
+export SOURCE_DATE_EPOCH=1589761165
 
 %install
-export SOURCE_DATE_EPOCH=1571888373
+export SOURCE_DATE_EPOCH=1589761165
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
